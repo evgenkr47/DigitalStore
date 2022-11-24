@@ -5,6 +5,8 @@ import com.example.feature_cart.data.mapper.CartInfoMapper
 import com.example.feature_cart.data.mapper.CartMapper
 import com.example.feature_cart.data.mapper.Mapper
 import com.example.feature_cart.data.remote.CartApi
+import com.example.feature_cart.data.repository.CartRepositoryImpl
+import com.example.feature_cart.domain.repository.CartRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -45,4 +47,11 @@ object CartModule {
             cartMapper = CartMapper(mapper = CartInfoMapper()),
         )
     }
+
+    @Provides
+    @Singleton
+    fun provideCartRepository(
+        api: CartApi,
+        mapper: CartMapper
+    ): CartRepository = CartRepositoryImpl(api, mapper)
 }

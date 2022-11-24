@@ -9,8 +9,8 @@ import androidx.lifecycle.lifecycleScope
 import androidx.navigation.NavDeepLinkRequest
 import androidx.navigation.fragment.findNavController
 import com.example.core.utils.*
-import com.example.feature_product_details.R
-import com.example.feature_product_details.databinding.FragmentProductDetailsBinding
+import com.example.e_commerce_concept_app.feature_product_details.R
+import com.example.e_commerce_concept_app.feature_product_details.databinding.FragmentProductDetailsBinding
 import com.example.feature_product_details.domain.models.ProductDetails
 import com.google.android.material.tabs.TabLayout
 import com.google.android.material.tabs.TabLayoutMediator
@@ -47,10 +47,10 @@ class ProductDetailsFragment: BaseFragment<FragmentProductDetailsBinding>(
                     binding.brandTextView.text = item.title
 
                     if (item.isFavorites) binding.heartIcon.setImageResource(
-                        com.example.core.R.drawable.ic_heart_filled
+                        R.drawable.ic_heart_filled
                     )
                     else binding.heartIcon.setImageResource(
-                        com.example.core.R.drawable.ic_heart_outline
+                        R.drawable.ic_heart_outline
                     )
 
                     setViewPagerAdapter(item)
@@ -71,18 +71,18 @@ class ProductDetailsFragment: BaseFragment<FragmentProductDetailsBinding>(
         backCardView.setOnClickListener { findNavController().popBackStack() }
 
         firstCapacityTextView.setOnClickListener {
-            firstCapacityCardView.setCardBgColor(requireContext(), com.example.core.R.color.primary)
+            firstCapacityCardView.setCardBgColor(requireContext(), R.color.primary)
             secondCapacityCardView.setCardBgColor(requireContext(), R.color.white)
             firstCapacityTextView.setTextColor(requireContext(), R.color.white)
-            secondCapacityTextView.setTextColor(requireContext(), com.example.core.R.color.text_gray)
+            secondCapacityTextView.setTextColor(requireContext(), R.color.text_gray)
             secondCapacityCardView.cardElevation = 0f
         }
 
         secondCapacityTextView.setOnClickListener {
-            secondCapacityCardView.setCardBgColor(requireContext(), com.example.core.R.color.primary)
+            secondCapacityCardView.setCardBgColor(requireContext(), R.color.primary)
             firstCapacityCardView.setCardBgColor(requireContext(), R.color.white)
             secondCapacityTextView.setTextColor(requireContext(), R.color.white)
-            firstCapacityTextView.setTextColor(requireContext(), com.example.core.R.color.text_gray)
+            firstCapacityTextView.setTextColor(requireContext(), R.color.text_gray)
             firstCapacityCardView.cardElevation = 0f
         }
 

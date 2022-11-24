@@ -6,7 +6,7 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.feature_cart.databinding.CartItemBinding
+import com.example.e_commerce_concept_app.feature_cart.databinding.CartItemBinding
 import com.example.feature_cart.domain.models.CartInfo
 
 class CartAdapter: RecyclerView.Adapter<CartAdapter.CartViewHolder>() {

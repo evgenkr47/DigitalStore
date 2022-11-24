@@ -12,8 +12,8 @@ import androidx.navigation.NavDeepLinkRequest
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.example.core.utils.*
-import com.example.feature_home_store.R
-import com.example.feature_home_store.databinding.FragmentHomeStoreBinding
+import com.example.e_commerce_concept_app.feature_home_store.R
+import com.example.e_commerce_concept_app.feature_home_store.databinding.FragmentHomeStoreBinding
 import com.google.android.material.bottomsheet.BottomSheetDialog
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest

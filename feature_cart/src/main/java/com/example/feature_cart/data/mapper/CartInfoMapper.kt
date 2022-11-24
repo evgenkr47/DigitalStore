@@ -3,8 +3,9 @@ package com.example.feature_cart.data.mapper
 import com.example.core.utils.EntityMapper
 import com.example.feature_cart.data.remote.dto.CartInfoDto
 import com.example.feature_cart.domain.models.CartInfo
+import javax.inject.Inject
 
-class CartInfoMapper: EntityMapper<CartInfoDto, CartInfo> {
+class CartInfoMapper @Inject constructor(): EntityMapper<CartInfoDto, CartInfo> {
     override fun mapFromEntity(entity: CartInfoDto): CartInfo {
         return CartInfo(
             id = entity.id,

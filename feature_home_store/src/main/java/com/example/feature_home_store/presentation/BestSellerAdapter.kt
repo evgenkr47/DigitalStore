@@ -1,6 +1,5 @@
 package com.example.feature_home_store.presentation
 
-import android.content.Context
 import android.graphics.Paint
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -12,8 +11,8 @@ import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.core.utils.Constants.TO_PRODUCT_DETAILS_FRAGMENT
-import com.example.feature_home_store.R
-import com.example.feature_home_store.databinding.BestSellerItemBinding
+import com.example.e_commerce_concept_app.feature_home_store.R
+import com.example.e_commerce_concept_app.feature_home_store.databinding.BestSellerItemBinding
 import com.example.feature_home_store.domain.models.BestSeller
 
 class BestSellerAdapter(
@@ -63,10 +62,10 @@ class BestSellerAdapter(
                 .into(phonePreviewImageView)
 
             if (item.isFavorites) heartIcon.setImageResource(
-                 com.example.core.R.drawable.ic_heart_filled
+                 R.drawable.ic_heart_filled
             )
             else heartIcon.setImageResource(
-                com.example.core.R.drawable.ic_heart_outline
+                R.drawable.ic_heart_outline
             )
         }
     }

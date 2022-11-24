@@ -3,8 +3,9 @@ package com.example.feature_home_store.data.mapper
 import com.example.core.utils.EntityMapper
 import com.example.feature_home_store.data.remote.dto.BestSellerDto
 import com.example.feature_home_store.domain.models.BestSeller
+import javax.inject.Inject
 
-class BestSellerMapper: EntityMapper<BestSellerDto, BestSeller> {
+class BestSellerMapper @Inject constructor(): EntityMapper<BestSellerDto, BestSeller> {
     override fun mapFromEntity(entity: BestSellerDto): BestSeller {
         return BestSeller(
             id = entity.id,

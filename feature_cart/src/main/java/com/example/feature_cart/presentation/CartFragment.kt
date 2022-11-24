@@ -7,7 +7,7 @@ import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.example.core.utils.BaseFragment
 import com.example.core.utils.showProgressBarWhenLoading
-import com.example.feature_cart.databinding.FragmentCartBinding
+import com.example.e_commerce_concept_app.feature_cart.databinding.FragmentCartBinding
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch

@@ -4,7 +4,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.example.feature_product_details.databinding.ShopItemBinding
+import com.example.e_commerce_concept_app.feature_product_details.databinding.ShopItemBinding
 import com.example.feature_product_details.domain.models.ProductDetails
 
 class ViewPagerAdapter(

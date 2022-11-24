@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.AsyncListDiffer
 import androidx.recyclerview.widget.DiffUtil
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
-import com.example.feature_home_store.databinding.HotSalesItemBinding
+import com.example.e_commerce_concept_app.feature_home_store.databinding.HotSalesItemBinding
 import com.example.feature_home_store.domain.models.HomeStore
 
 class HotSalesViewPagerAdapter:

@@ -6,6 +6,8 @@ import com.example.feature_home_store.data.mapper.BestSellerMapper
 import com.example.feature_home_store.data.mapper.HomeStoreMapper
 import com.example.feature_home_store.data.mapper.Mapper
 import com.example.feature_home_store.data.remote.ProductsApi
+import com.example.feature_home_store.data.repository.HomeStoreRepositoryImpl
+import com.example.feature_home_store.domain.repository.HomeStoreRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -50,4 +52,11 @@ object ProductsModule {
             )
         )
     }
+
+    @Provides
+    @Singleton
+    fun provideHomeStoreRepository(
+        api: ProductsApi,
+        mapper: Mapper
+    ): HomeStoreRepository = HomeStoreRepositoryImpl(api, mapper)
 }

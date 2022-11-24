@@ -11,7 +11,7 @@ import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.core.content.ContextCompat
 import androidx.core.content.res.ResourcesCompat
-import com.example.core.R
+import com.example.e_commerce_concept_app.core.R
 import com.google.android.material.tabs.TabLayout
 
 fun TabLayout.changeSelectedTabItemFontFamily(
