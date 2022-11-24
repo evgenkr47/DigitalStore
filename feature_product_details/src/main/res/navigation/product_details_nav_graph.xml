@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_details_nav_graph"
+    app:startDestination="@id/productDetailsFragment">
+
+    <fragment
+        android:id="@+id/productDetailsFragment"
+        android:name="com.example.feature_product_details.presentation.ProductDetailsFragment"
+        android:label="fragment_product_details"
+        tools:layout="@layout/fragment_product_details" >
+        <deepLink app:uri="android-app://com.example.e_commerce_concept_app/product_details_fragment" />
+    </fragment>
+</navigation>
